@@ -1,0 +1,29 @@
+:root {
+    --color-base-hue: 200;
+    --color-base-light: 5;
+    --color-invert-contrast: 50; 
+    --color-background-dark: hsl(var(--color-base-hue), 50%, calc(var(--color-base-light)*1%));
+    --color-background-mid:hsl(var(--color-base-hue), 50%, calc(var(--color-base-light)*1%) / 25%);
+    --color-background-light: hsl(var(--color-base-hue), 70%, calc(var(--color-base-light)*4%));
+    --color-text-light: hsl(var(--color-base-hue), 70%, calc(var(--color-invert-contrast)*1%)); 
+}
+
+[data-theme="dark"] {
+    --color-base-hue: 200;
+    --color-base-light: 5;
+    --color-invert-contrast: 50; 
+    --color-background-dark: hsl(var(--color-base-hue), 50%, calc(var(--color-base-light)*1%));
+    --color-background-mid:hsl(var(--color-base-hue), 50%, calc(var(--color-base-light)*2%));
+    --color-background-light: hsl(var(--color-base-hue), 70%, calc(var(--color-base-light)*4%));
+    --color-text-light: hsl(var(--color-base-hue), 70%, calc(var(--color-invert-contrast)*1%)); 
+}
+
+[data-theme="light"] {
+    --color-base-hue: 50;
+    --color-base-light: 70;
+    --color-invert-contrast: 10; 
+    --color-background-dark: hsl(var(--color-base-hue), 50%, calc(var(--color-base-light)*1%));
+    --color-background-mid:hsl(var(--color-base-hue), 50%, calc(var(--color-base-light)*2%));
+    --color-background-light: hsl(var(--color-base-hue), 70%, calc(var(--color-base-light)*4%));
+    --color-text-light: hsl(var(--color-base-hue), 70%, calc(var(--color-invert-contrast)*1%)); 
+}

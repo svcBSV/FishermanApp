@@ -1,0 +1,158 @@
+@import 'variables.css';
+
+:root {
+    --color-btn-primary-background: var(--color-background-dark);
+    --color-btn-primary-text: var(--color-text-light);
+    --color-btn-border: var(--color-background-light);
+    
+}
+
+.sidepanel {
+    background-color: var(--color-background-dark);
+    color: darkgrey;
+}
+
+
+.popup-position{
+    display:none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 200%;
+    z-index: 99;    
+    left: 0;
+    top: 0;
+}
+
+/* The Modal Wrapper    */
+.popup-wrapper{
+text-align: left;
+z-index: 99;
+}
+
+/* //The Modal Container */
+.popup-container{
+    border: 1px solid var(--color-btn-border);
+    background-color: var(--color-background-dark);
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    height: 100%;
+    margin: 70px auto;
+    z-index: inherit;
+    transform: translate(0%, 200%);
+}
+
+.market{
+    transform: translate(0%, 0%);
+}
+
+.error {
+    color: rgb(220, 132, 0);
+}
+
+.important {
+    color: rgb(0, 174, 58);
+}
+
+
+
+
+.btn {
+    border: 1px solid var(--color-btn-border);
+    border-radius: .5rem;
+    padding: .2rem 0.5rem;
+    font-size: 0.7rem;
+    font-family: "Anta";
+    text-decoration: none;
+    opacity: 80%;
+}
+
+
+.btn-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn-row > * {
+    margin-left: 1rem;
+}
+
+.btn-row > *:first-child {
+    margin-left: 0;
+}
+
+.btn:hover {
+    color: white;
+    text-shadow: 0 2px 10px var(--color-text-light), 0 -2px 13px var(--color-text-light);
+}
+
+.btn-primary {
+    color: var(--color-btn-primary-text);
+    background-color: var(--color-btn-primary-background);
+
+    flex-wrap: wrap;
+}
+
+.btn-danger {
+    color: rgb(197, 0, 0);
+    background-color: black;
+
+    flex-wrap: wrap;
+}
+
+.btn-control {
+    border: 1px solid var(--color-btn-border);
+    border-radius: .5rem;
+    padding: .2rem 0.5rem;
+    font-size: 1rem;
+    font-family: "Anta";
+    text-decoration: none;
+}
+
+.refdiv {
+    border: 1px solid dimgray;
+    border-radius: .5rem;
+    padding: 0.3rem 0.1rem 0.3rem 0.3rem;
+    font-size: 1rem;
+    background-color: var(--color-background-dark);
+    margin-bottom: 5px;
+}
+
+.txidlink {
+    color: goldenrod;
+    font-size: 0.5rem;
+    text-decoration: none;
+    
+}
+
+.sitelink {
+    color: whitesmoke;
+    font-size: 0.8rem;
+    text-decoration: none;
+    
+}
+
+.messagetxt {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.ordlist {
+    padding: .1rem 0.1rem 0.1rem 0.1rem;
+    margin-bottom: 3px;
+}
+
+.iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: 'block';
+    overflow-clip-margin: content-box 5px;
+}
+
+.buttonsizes {
+    max-width: 10%;
+    max-height: 10%;
+}
+

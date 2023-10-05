@@ -1,0 +1,43 @@
+{
+    "name": "Orbinal codec",
+    "description": "Pull content from the blockchain using orbinal pointers, create orbinals from txids and post them for others to decode",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "content_scripts" :[
+        {
+            "matches": ["<all_urls>"],
+            "all_frames": true,
+            "js": ["thirdParty/jQuery.js"]
+        }
+    ],
+    
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "storage",
+        "sidePanel"
+      ],
+
+      "side_panel": {
+        "default_path": "sidepanel.html"
+      },
+
+      "background": {
+        "service_worker": "background.js",
+        "type": "module"
+      },
+    "action": {
+        "default_icon": {
+        "48": "/images/logo_2_48x48.png",
+        "128": "/images/logo_2_128x128.png"
+        }
+    },
+    "icons": {
+        "48": "/images/logo_2_48x48.png",
+        "128": "/images/logo_2_128x128.png"
+    }
+}
