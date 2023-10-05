@@ -1,8 +1,8 @@
 # FishermanApp
 Alpha Chrome Extension for creating bookmarks from txids (also supports hodlocker messages).
 To use the extension as it currently is:
-1. Download the FAI.zip
-2. Unzip put `chrome://extensions` into your address bar
+1. Click on the "<> Code" button and select download as zip.
+2. Unzip to a folder and put `chrome://extensions` into your chrome or firefox address bar
 3. In the top right, enable dev mode, then on the left select "Load unpacked", navigate into the unzipped FAI folder and select OK.
 4. You can now manage and pin the extension just like you would any other Chrome extension you have.
 5. In the top right of your browser, click on the puzzle piece, pin the new extension icon
