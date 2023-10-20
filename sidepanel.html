@@ -3,13 +3,92 @@
   <head>
     <title>Hauberk (chain mail)</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="thirdParty/jQuery.js"></script>
+    <script src="assets/js/bsv.browser.min.js"></script>
+    <script src="assets/js/message.js"></script>
+    <script src="assets/js/SHUAllet_plugin.js"></script>
+    <script src="assets/js/jQuery.js"></script>
   </head>
-  <body class="sidepanel">
+  <body class="sidepanel"> 
     <img src="/images/fisherman.png" alt="fisherman.png" style="max-width: 30%; max-height:30%; display: block; width: 50%; margin-left: auto; margin-right: auto;">
     <h1 style="text-align: center;">Simple Fisherman App</h1>
-    <div style="align-items: flex-end;" id="orb_container">
-          <h3 id="title" href="https://docs.1satordinals.com/">1Sat Ord Bookmarks</h3>
+  
+    <div class="btn-row">
+      <div id="show_all"class="btn">All</div>
+      <br>
+      <div id="show_tab_1" class="btn">Bookmarks</div>
+      <br>
+      <div id="show_tab_2" class="btn">Messages</div>
+      <br>
+      <div id="show_tab_3" class="btn">Assets</div>
+    </div>
+    <div>
+      <br>
+    </div>
+    <div class="btn-row">
+      <div id="show_tab_4" class="btn">Coupons</div>
+      <br>
+      <div id="show_tab_5" class="btn">Notices</div>
+      <br>
+      <div id="show_tab_6" class="btn">Market</div>
+      <br>
+      <div id="show_tab_7" class="btn">Locks</div>
+    </div>
+<br>
+    <div>
+      <div id="tab_1" style="display: block;" name="bookmarks">
+        <div style="align-items: flex-end;" id="orb_container">
+          <hr>
+          <h3 id="title">Bookmarks</h3>
+        </div>
+      </div>
+
+      <div id="tab_2" style="display: none;" name="messages">
+        <div style="align-items: flex-end;" id="message_container">
+          <hr>
+          <h3 id="title">Messages</h3>
+            <p>No messages yet</p>
+        </div>
+      </div>
+
+      <div id="tab_3" style="display: none;" name="assets">
+        <div style="align-items: flex-end;" id="assets_container">
+          <hr>
+          <h3 id="title">Assets</h3>
+          <p>No assets yet</p>
+        </div>
+      </div>
+
+      <div id="tab_4" style="display: none;" name="coupons">
+        <div style="align-items: flex-end;" id="coupons_container">
+          <hr>
+          <h3 id="title">Coupons</h3>
+          <p>No coupons yet</p>
+        </div>
+      </div>
+
+      <div id="tab_5" style="display: none;" name="notices">
+        <div style="align-items: flex-end;" id="notices_container">
+          <hr>
+          <h3 id="title">Notices</h3>
+          <p>No notices yet</p>
+        </div>
+      </div>
+
+      <div id="tab_6" style="display: none;" name="market">
+        <div style="align-items: flex-end;" id="market_container">
+          <hr>
+          <h3 id="title">Market</h3>
+          <p>No market yet</p>
+        </div>
+      </div>
+
+      <div id="tab_7" style="display: none;" name="locks">
+        <div style="align-items: flex-end;" id="locks_container">
+          <hr>
+          <h3 id="title">Locks</h3>
+          <p>No locks yet</p>
+        </div>
+      </div>
 
     </div>
 

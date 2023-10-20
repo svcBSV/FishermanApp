@@ -1,6 +1,19 @@
 
-const refresh_btn = document.getElementById('refresh_btn');
-// refresh_btn.addEventListener("click", update());
+
+const show_all = document.getElementById("show_all")
+show_all.addEventListener('click', function(e) {
+  toggle_tabs('All')
+})
+
+const tab_list = ['tab_1','tab_2','tab_3','tab_4','tab_5','tab_6','tab_7']
+
+tab_list.forEach(tab => {
+  tab_btn = document.getElementById('show_'+tab)
+  tab_btn.addEventListener('click', function(e) {
+    toggle_tabs(tab)
+  })
+})
+
 
 chrome.runtime.onMessage.addListener((obj, sender, response) => {
   const { type, ref, imgData, txid, tab_id} = obj;
@@ -220,6 +233,42 @@ async function refresh() {
       })
 
   } 
+
+  function toggle_tabs(id) {
+    const tab_list = ['tab_1','tab_2','tab_3','tab_4','tab_5','tab_6','tab_7']
+    const show_all = document.getElementById("show_all")
+    if(id === 'All') {
+        
+        show_all.classList.add('selected')
+        tab_list.forEach( tab => {
+          tab_btn = document.getElementById('show_'+tab)
+          tab_el = document.getElementById(tab)
+          tab_btn.classList.remove('selected')
+          tab_el.style.display = 'block'
+        })
+
+    } else {
+      tab_list.forEach( tab => {
+        show_all.classList.remove('selected')
+        if(tab === id) {
+          tab_btn = document.getElementById('show_'+tab)
+          tab_btn.classList.add('selected')
+          selected_tab = document.getElementById(tab)
+          selected_tab.style.display = 'block'
+
+        } else {
+          tab_btn = document.getElementById('show_'+tab)
+          tab_btn.classList.remove('selected')
+          other_tab = document.getElementById(tab)
+          other_tab.style.display = 'none'
+        }
+      })
+    }
+    
+
+
+
+  }
 
 
 
